@@ -25,6 +25,13 @@ This script overwrites `Element.prototype.setAttribute` and checks for `NaN` val
 or development environment to actually throw an error that can be 
 [caught and sent to Sentry for example](http://bahmutov.calepin.co/know-unknown-unknowns-with-sentry.html).
 
+    <script src="bower/check-element-attribute/check-element-attribute.js"></script>
+    <script>
+        var example = document.getElementById('example');
+        example.setAttribute('transform', 'translate(0,NaN)');
+        // throws an actual Error
+    </script>
+
 ### Small print
 
 Author: Gleb Bahmutov &copy; 2015
