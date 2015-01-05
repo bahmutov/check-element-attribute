@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>check-element-attributes</title>
+</head>
+<body>
+    <h2>check-element-attributes</h2>
+    <p>Example svg below</p>
+    <svg id="svg" width="200" height="100">
+        <g id="example">
+        </g>
+    </svg>
+    <script src="../check-element-attribute.js"></script>
+    <script>
+        var example = document.getElementById('example');
+        console.log('setting valid attribute on #example');
+        example.setAttribute('foo', 'bar');
+        console.log('setting invalid attribute on #example');
+        example.setAttribute('transform', 'translate(0,NaN)');
+    </script>
+</body>
+</html>

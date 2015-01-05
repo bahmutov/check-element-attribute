@@ -1,0 +1,26 @@
+{
+  "name": "check-element-attribute",
+  "version": "0.0.0",
+  "authors": [
+    "Gleb Bahmutov <gleb.bahmutov@gmail.com>"
+  ],
+  "description": "Check attribute value before setting to avoid silent D3 / SVG errors",
+  "main": "check-element-attribute.js",
+  "keywords": [
+    "DOM",
+    "Element",
+    "setAttribute",
+    "check",
+    "SVG",
+    "D3",
+    "validation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
