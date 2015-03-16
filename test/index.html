@@ -12,11 +12,14 @@
         <g id="example">
         </g>
     </svg>
+    <img id="img"/>
     <script src="../check-element-attribute.js"></script>
     <script>
         var example = document.getElementById('example');
         console.log('setting valid attribute on #example');
         example.setAttribute('foo', 'bar');
+        console.log('setting valid data URI');
+        document.getElementById('img').setAttribute('src', 'data:NaNNaNNaN');
         console.log('setting invalid attribute on #example');
         example.setAttribute('transform', 'translate(0,NaN)');
     </script>
