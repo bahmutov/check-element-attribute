@@ -2,7 +2,8 @@
   var setA = Element.prototype.setAttribute;
 
   function isInvalidValue(value) {
-    return /NaN/.test(value);
+    // Check that value is not a data URI.
+    return /^(?!data:).*NaN/.test(value);
   }
 
   Element.prototype.setAttribute = function checkSetAttribute(name, value) {
