@@ -32,13 +32,15 @@ or development environment to actually throw an error that can be
         // throws an actual Error
     </script>
 
+**Note** this does not check `data:` values.
+
 ### Small print
 
 Author: Gleb Bahmutov &copy; 2015
 
 * [@bahmutov](https://twitter.com/bahmutov)
 * [glebbahmutov.com](http://glebbahmutov.com)
-* [blog](http://bahmutov.calepin.co/)
+* [blog](http://glebbahmutov.com/blog/)
 
 License: MIT - do anything with the code, but don't blame me if it does not work.
 
